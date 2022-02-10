@@ -1,0 +1,26 @@
+{{define "form"}}
+
+<html>
+  {{template "header"}}
+
+  <body>
+    <div align="center">
+
+      <div>
+        <h1>{{.PlayerName}}</h1>
+        <form action="{{.Action}}" method="get">
+          <input type="hidden" name="p" value="{{.Player}}"/>
+          <p> Next move: <input inputmode="numeric" type="number" name="move" max="400" pattern="[0-9]* "autofocus="1" /> </p>
+          <p>(Or, <a href="{{.UndoAction}}">undo prev move</a>)</p>
+        </form>
+      </div>
+
+      <div>
+        <img src="{{.VizAction}}"/>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+{{end}}

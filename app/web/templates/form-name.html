@@ -1,0 +1,22 @@
+{{define "form-name"}}
+
+<html>
+  {{template "header"}}
+
+  <body>
+    <div align="center">
+      <form action="{{.Action}}" method="get">
+        <p>
+          I am <select name="p">
+            {{range $k,$v := .Players}}
+            <option value="{{$k}}">{{$v}}</option>
+            {{end}}
+          </select>
+          <input type="submit" id="gobutton" value="GO"/>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
+
+{{end}}
