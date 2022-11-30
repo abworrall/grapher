@@ -15,10 +15,7 @@ var(
 	players = map[string]string{
 		"A": "[A]d",
 		"D": "[D]imey",
-		"J": "M[J]Lewis",
 		"M": "[M]att",
-		"L": "[L]aura",
-		"P": "[P]ete",
 	}
 )
 
